@@ -99,17 +99,6 @@ Customer-Churn-Prediction
 ```
 
 ---
-
-## Project Demonstration
-
-A short video demonstration of the project is included in this repository.
-
-File: **Churn Prediction.mp4**
-
-The video shows the workflow of the churn prediction model and its results.
-
----
-
 ## Future Improvements
 
 Possible improvements for this project include:
