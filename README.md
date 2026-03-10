@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-Customer churn is a major concern for banks and financial institutions because losing customers can directly impact revenue and business growth. This project focuses on building a **machine learning model that predicts whether a bank customer will leave the bank or continue using its services**.
+Customer churn is a significant challenge for banks and financial institutions because losing customers directly impacts revenue and business growth. This project develops a **machine learning model to predict whether a bank customer will leave the bank or continue using its services**.
 
-The model analyzes customer demographic details, financial attributes, and banking activity to identify patterns associated with customer churn. Predicting churn early allows businesses to take proactive actions to retain valuable customers.
+The model analyzes customer demographic details, financial attributes, and banking activity to identify patterns associated with churn. Predicting churn early allows organizations to take proactive actions to retain valuable customers.
 
 ---
 
 ## Dataset
 
-This project uses the **Bank Customer Churn Dataset**, which contains **10,000 customer records** and multiple attributes describing customer demographics and banking activity.
+This project uses the **Bank Customer Churn Dataset**, which contains **10,000 customer records** with multiple features describing customer demographics, financial information, and banking activity.
 
 ### Features in the Dataset
 
@@ -20,13 +20,13 @@ This project uses the **Bank Customer Churn Dataset**, which contains **10,000 c
 * **Age** – Age of the customer
 * **Tenure** – Number of years the customer has been with the bank
 * **Balance** – Account balance
-* **NumOfProducts** – Number of bank products used by the customer
-* **HasCrCard** – Indicates whether the customer has a credit card
-* **IsActiveMember** – Indicates whether the customer is an active member
+* **NumOfProducts** – Number of bank products used
+* **HasCrCard** – Whether the customer owns a credit card
+* **IsActiveMember** – Indicates if the customer actively uses bank services
 * **EstimatedSalary** – Estimated annual salary
-* **Exited** – Target variable indicating churn (1 = churn, 0 = stay)
+* **Exited** – Target variable (1 = churn, 0 = customer stays)
 
-The objective of the project is to **predict the value of the `Exited` column**.
+The objective is to **predict the `Exited` variable** using machine learning techniques.
 
 ---
 
@@ -44,41 +44,28 @@ The objective of the project is to **predict the value of the `Exited` column**.
 
 ## Machine Learning Workflow
 
-The following steps were followed to build the churn prediction model:
+The project follows a structured machine learning pipeline:
 
 1. **Data Loading and Exploration**
-
-   * Inspecting dataset structure
-   * Checking feature distributions
-
 2. **Data Preprocessing**
 
-   * Removing unnecessary columns such as RowNumber, CustomerId, and Surname
+   * Removing irrelevant columns
    * Encoding categorical variables
-
 3. **Feature Engineering**
 
    * Creating additional features such as balance-to-salary ratio
-
 4. **Handling Class Imbalance**
 
-   * Using **SMOTE (Synthetic Minority Oversampling Technique)** to balance the dataset
-
+   * Using **SMOTE (Synthetic Minority Oversampling Technique)**
 5. **Model Training**
 
-   * Training a **Gradient Boosting Classifier**
-
+   * Gradient Boosting Classifier
 6. **Model Evaluation**
 
    * Confusion Matrix
-   * Precision
-   * Recall
-   * F1-score
+   * Precision, Recall, F1-score
    * Accuracy
-
 7. **Feature Importance Analysis**
-
-   * Identifying the most influential features affecting churn
 
 ---
 
@@ -100,21 +87,6 @@ The model demonstrates balanced performance in predicting both churn and non-chu
 
 ---
 
-## Feature Importance
-
-Feature importance analysis revealed that the following variables have a strong influence on customer churn:
-
-* Age
-* Balance
-* Estimated Salary
-* Credit Score
-* Number of Products
-* Tenure
-
-These insights help understand customer behavior and factors that influence churn decisions.
-
----
-
 ## Project Structure
 
 ```
@@ -122,37 +94,19 @@ Customer-Churn-Prediction
 │
 ├── Churn_Modelling.csv
 ├── churn_prediction.ipynb
-├── README.md
-└── requirements.txt
+├── Churn Prediction.mp4
+└── README.md
 ```
 
 ---
 
-## How to Run the Project
+## Project Demonstration
 
-1. Clone the repository
+A short video demonstration of the project is included in this repository.
 
-```
-git clone https://github.com/your-github-username/customer-churn-prediction.git
-```
+File: **Churn Prediction.mp4**
 
-2. Navigate to the project folder
-
-```
-cd customer-churn-prediction
-```
-
-3. Install required libraries
-
-```
-pip install -r requirements.txt
-```
-
-4. Run the notebook
-
-```
-jupyter notebook churn_prediction.ipynb
-```
+The video shows the workflow of the churn prediction model and its results.
 
 ---
 
@@ -162,7 +116,7 @@ Possible improvements for this project include:
 
 * Hyperparameter tuning using GridSearchCV
 * Testing advanced models such as XGBoost
-* Building a dashboard for churn insights
+* Building an interactive dashboard for churn insights
 * Deploying the model using FastAPI or Streamlit
 
 ---
@@ -172,4 +126,6 @@ Possible improvements for this project include:
 **Navya Saravanan**
 AI/ML Student
 
-LinkedIn: https://www.linkedin.com/in/your-linkedin-username
+LinkedIn:
+https://www.linkedin.com/in/navya-saravanan-8aa481311/
+
