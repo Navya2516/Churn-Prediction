@@ -99,14 +99,6 @@ Customer-Churn-Prediction
 ```
 
 ---
-## Future Improvements
-
-Possible improvements for this project include:
-
-* Hyperparameter tuning using GridSearchCV
-* Testing advanced models such as XGBoost
-* Building an interactive dashboard for churn insights
-* Deploying the model using FastAPI or Streamlit
 
 ---
 
